@@ -82,10 +82,10 @@ export default class {
       }
 
       try {
-        if (handler.requiresVC && !isUserInVoice(msg.guild, msg.author)) {
-          await msg.channel.send(errorMsg('gotta be in a voice channel'));
-          return;
-        }
+//         if (handler.requiresVC && !isUserInVoice(msg.guild, msg.author)) {
+//           await msg.channel.send(errorMsg('gotta be in a voice channel'));
+//           return;
+//         }
 
         await handler.execute(msg, args);
       } catch (error: unknown) {
